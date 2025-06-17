@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Details - SmartClassX</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="blog-detail-container">
+    <h2 id="detailTitle"></h2>
+    <img id="detailImage" src="" alt="Blog Image" class="detail-image"/>
+    <p id="detailContent" class="detail-text"></p>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="auth.js"></script>
+  <script src="script.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const title = params.get("title");
+
+    const blogData = JSON.parse(localStorage.getItem("blogPosts")) || [];
+
+    const post = blogData.find(post => post.title === title);
+    if (post) {
+      document.getElementById("detailTitle").textContent = post.title;
+      document.getElementById("detailImage").src = post.image;
+      document.getElementById("detailContent").textContent = post.content;
+    } else {
+      document.querySelector("main").innerHTML = "<p>Blog post not found.</p>";
+    }
+  </script>
+</body>
+</html>
