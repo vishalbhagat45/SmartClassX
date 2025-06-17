@@ -1,19 +1,28 @@
-$(document).ready(function () {
-  // Smooth scroll
-  $('nav a').on('click', function (e) {
-    if (this.hash !== '') {
-      e.preventDefault();
-      const hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top - 80
-      }, 800);
-    }
-  });
+// Scroll smoothly to any section by ID
+function scrollToSection(id) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+}
 
-  // Show message on Get Started button
-  $('.cta-button').on('click', function (e) {
+// Handle contact form
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function (e) {
     e.preventDefault();
-    alert('Thanks for your interest! Our counselor will contact you soon.');
+    alert('Thanks for contacting us! We’ll get back to you soon.');
+    form.reset();
   });
 });
+// Image Gallery Interaction (Expand on Click)
+document.addEventListener("DOMContentLoaded", () => {
+  const galleryImages = document.querySelectorAll(".gallery img");
+
+  galleryImages.forEach(img => {
+    img.addEventListener("click", () => {
+      window.open(img.src, "_blank"); // Opens full image in a new tab
+    });
+  });
+});
+
+
 
