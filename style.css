@@ -561,3 +561,18 @@ td {
 .blog-content .read-more:hover {
   text-decoration: underline;
 }
+
+.toppers {
+  display: flex;
+  justify-content: center;
+}
+
+.topper {
+  display: flex;
+  gap: 20px; /* Adjust spacing between items */
+}
+
+.topper-item {
+  text-align: center;
+}
+

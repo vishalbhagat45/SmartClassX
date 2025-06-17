@@ -35,17 +35,17 @@ function renderBlogPosts() {
   const blogPosts = [
     {
       title: "How to Prepare for Competitive Exams",
-      image: "https://via.placeholder.com/400x200?text=Blog+Image",
+      image: "image/blog1.jpg",
       content: "Get expert tips to crack IIT, NEET, and board exams..."
     },
     {
       title: "Importance of Concept Clarity in Physics",
-      image: "https://via.placeholder.com/400x200",
+      image: "image/blog2.jpg",
       content: "Discover why understanding the basics of Physics is essential..."
     },
     {
       title: "Time Management for Students",
-      image: "https://via.placeholder.com/400x200",
+      image: "image/blog3.jpg",
       content: "Balance your academics and personal life effectively..."
     }
   ];
