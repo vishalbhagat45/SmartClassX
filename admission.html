@@ -4,58 +4,10 @@
   <meta charset="UTF-8">
   <title>Admissions - SmartClassX</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .content {
-      min-height: calc(100vh - 140px);
-      padding: 2rem;
-      background-color: #f5faff;
-      color: #333;
-    }
-
-    .section {
-      margin-bottom: 2rem;
-    }
-
-    .section h2 {
-      color: #002b5b;
-      margin-bottom: 1rem;
-    }
-
-    ol.step-list {
-      padding-left: 1.5rem;
-    }
-
-    ul.requirements, ul.docs {
-      list-style-type: disc;
-      padding-left: 1.5rem;
-    }
-
-    .download-links a {
-      display: inline-block;
-      margin-top: 0.5rem;
-      padding: 0.5rem 1rem;
-      background-color: #002b5b;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      margin-right: 1rem;
-    }
-
-    .download-links a:hover {
-      background-color: #005ab5;
-    }
-  </style>
 </head>
 <body>
-<script>
-  if (localStorage.getItem("isLoggedIn") !== "true") {
-    alert("Please login or register to access this page.");
-    window.location.href = "login.html";
-  }
-</script>
+ <body data-restrict="true">
 
- <div id="navbar"></div>
   <div class="content">
     
     <div class="section">
@@ -100,6 +52,8 @@
   </div>
   <script src="auth.js"></script>
   <script src="script.js"></script>
+  
+
 
 </body>
 </html>

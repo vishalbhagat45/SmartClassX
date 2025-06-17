@@ -6,41 +6,32 @@
   <title>Schedule - SmartClassX</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Schedule Page */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+  /* Make the page take full height and push footer down */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-th, td {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #ccc;
+main {
+  flex: 1; /* This pushes footer to the bottom */
 }
 
-th {
-  background-color: #003366;
+/* Optional footer styling */
+#footer {
+  background-color: #008399; /* Match your header/nav color */
   color: white;
-}
-
-td {
-  background-color: #f9f9f9;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 0.9rem;
 }
 
   </style>
 </head>
 <body>
-<script>
-  if (localStorage.getItem("isLoggedIn") !== "true") {
-    alert("Please login or register to access this page.");
-    window.location.href = "login.html";
-  }
-</script>
-
-  <div id="navbar"></div>
-  </header>
-
+  <body data-restrict="true">
   <main>
     <h1>Class Schedule</h1>
 
@@ -71,7 +62,6 @@ td {
     </table>
   </main>
 
-  <div id="footer"></div>
   <script src="auth.js"></script>
   <script src="script.js"></script>
 </body>

@@ -5,43 +5,10 @@
   <meta charset="UTF-8" />
   <title>Results - SmartClassX</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-  /* Results Page */
-.toppers {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.topper {
-  text-align: center;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.topper img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 2px solid #ccc;
-}
-
-  </style>
+  
 </head>
 <body>
-  <script>
-  if (localStorage.getItem("isLoggedIn") !== "true") {
-    alert("Please login or register to access this page.");
-    window.location.href = "login.html";
-  }
-</script>
-
-   <div id="navbar"></div>
-
+   <body data-restrict="true">
   <main>
     <h1>Our Results & Achievements</h1>
 
@@ -68,7 +35,6 @@
     </section>
   </main>
 
-  <div id="footer"></div>
   <script src="auth.js"></script>
   <script src="script.js"></script>
 </body>

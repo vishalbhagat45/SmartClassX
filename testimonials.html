@@ -5,38 +5,10 @@
   <meta charset="UTF-8" />
   <title>Testimonials - SmartClassX</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Testimonials Page */
-.testimonial {
-  background-color: #fff;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.testimonial p {
-  margin-bottom: 10px;
-}
-
-.testimonial strong {
-  color: #003366;
-}
-
-.testimonial:last-child {
-  margin-bottom: 50px;
-}
-
-  </style>
 </head>
 <body>
-    <script>
-  if (localStorage.getItem("isLoggedIn") !== "true") {
-    alert("Please login or register to access this page.");
-    window.location.href = "login.html";
-  }
-</script>
-  <div id="navbar"></div>
+  <body data-restrict="true">
+
   <main>
     <h1>Testimonials</h1>
 
@@ -54,7 +26,7 @@
     <!-- Add more testimonials -->
   </main>
 
-  <div id="footer"></div>
+
   <script src="auth.js"></script>
   <script src="script.js"></script>
 </body>

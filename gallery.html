@@ -5,47 +5,12 @@
   <meta charset="UTF-8" />
   <title>Gallery - SmartClassX</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Gallery Page */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.gallery img {
-  width: calc(33.33% - 10px);
-  border-radius: 8px;
-  object-fit: cover;
-  transition: transform 0.2s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-video {
-  margin-top: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.2);
-}
-
-  </style>
 </head>
 <body>
-    <script>
-  if (localStorage.getItem("isLoggedIn") !== "true") {
-    alert("Please login or register to access this page.");
-    window.location.href = "login.html";
-  }
-</script>
-
-   <div id="navbar"></div>
+   <body data-restrict="true">
 
   <main>
     <h1>Gallery</h1>
-
     <section class="gallery">
       <img src="../images/classroom1.jpg" alt="Classroom Session" />
       <img src="../images/event1.jpg" alt="Annual Day Event" />
@@ -61,7 +26,6 @@ video {
     </section>
   </main>
 
-  <div id="footer"></div>
   <script src="auth.js"></script>
   <script src="script.js"></script>
 </body>
