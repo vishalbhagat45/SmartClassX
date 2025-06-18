@@ -36,5 +36,13 @@ SmartClassX is a responsive and dynamic educational institute website that provi
    cd SmartClassX
 
 
+---
+
+✅ Pro Tip: Create a `screenshots` folder in your repo and add home/schedule/blog screenshots for a professional touch!
+
+Let me know if you'd like me to generate the `LICENSE` file or deploy it on GitHub Pages too.
+
+
+
 
 
