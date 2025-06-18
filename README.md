@@ -28,5 +28,13 @@ SmartClassX is a responsive and dynamic educational institute website that provi
 
 ---
 
+## 🧪 How to Use
+
+1. **Clone this repo:**
+   ```bash
+   git clone https://github.com/yourusername/SmartClassX.git
+   cd SmartClassX
+
+
 
 
