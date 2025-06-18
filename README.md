@@ -3,6 +3,11 @@
 SmartClassX is a responsive and dynamic educational institute website that provides students, teachers, and parents a clean interface to access essential academic features. Built using **HTML, CSS, JavaScript**, this project also includes **role-based login**, **dynamic navbar/footer**, **blog search**, and a **class schedule system**.
 
 ---
+## 🚀 Live Website
+
+[Click here to view SmartClassX Live](https://vishalbhagat45.github.io/SmartClassX/)
+
+---
 
 ## 📌 Features
 
@@ -35,12 +40,20 @@ SmartClassX is a responsive and dynamic educational institute website that provi
    git clone https://github.com/yourusername/SmartClassX.git
    cd SmartClassX
 
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
 
 ---
 
-✅ Pro Tip: Create a `screenshots` folder in your repo and add home/schedule/blog screenshots for a professional touch!
+## 🙌 Contributions
 
-Let me know if you'd like me to generate the `LICENSE` file or deploy it on GitHub Pages too.
+Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
+
+---
+
 
 
 
